@@ -20,6 +20,12 @@ export default function Header() {
           >
             Map
           </Link>
+          <Link
+            href="/about"
+            className="text-stone-600 hover:text-stone-900 transition-colors"
+          >
+            Why Local?
+          </Link>
         </div>
       </nav>
     </header>

@@ -23,17 +23,25 @@ export default function HomePage() {
   });
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
-      <section className="mb-8">
-        <h1 className="text-3xl font-bold text-stone-900 sm:text-4xl">
-          Israel Coffee Roasters
-        </h1>
-        <p className="mt-2 text-lg text-stone-600">
-          Discover specialty coffee roasters from across Israel &mdash; from the
-          bustling streets of Tel Aviv to the hills of Jerusalem and beyond.
-        </p>
-      </section>
+    <div>
+      {/* Hero banner */}
+      <div className="bg-gradient-to-br from-amber-800 via-amber-900 to-stone-900 text-white">
+        <div className="mx-auto max-w-3xl px-4 py-16 text-center">
+          <div className="flex justify-center gap-3 mb-6">
+            <span className="text-5xl">☕</span>
+          </div>
+          <h1 className="text-3xl font-bold sm:text-4xl">
+            Israel Coffee Roasters
+          </h1>
+          <p className="mt-4 text-lg text-amber-100 max-w-xl mx-auto">
+            Discover specialty coffee roasters from across Israel &mdash; from
+            the bustling streets of Tel Aviv to the hills of Jerusalem and
+            beyond.
+          </p>
+        </div>
+      </div>
 
+      <div className="mx-auto max-w-6xl px-4 py-8">
       <SearchFilter
         search={search}
         onSearchChange={setSearch}
@@ -58,6 +66,7 @@ export default function HomePage() {
           No roasters found matching your filters. Try adjusting your search.
         </p>
       )}
+      </div>
     </div>
   );
 }

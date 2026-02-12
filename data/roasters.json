@@ -15,7 +15,7 @@
       "Shlomo HaMelech 12, Tel Aviv (cafe & espresso bar)",
       "Merkhavya 6, Tel Aviv (cafe & espresso bar)"
     ],
-    "roastStyles": ["light", "medium", "specialty single-origin"],
+    "roastStyles": ["light", "medium", "single-origin"],
     "foundedYear": 2011,
     "image": "/images/cafelix.svg"
   },
@@ -52,7 +52,7 @@
     "retailLocations": [
       "Allenby 54, Tel Aviv (cafe & roastery)"
     ],
-    "roastStyles": ["medium", "medium-dark", "espresso", "filter"],
+    "roastStyles": ["medium", "dark", "espresso"],
     "foundedYear": 2024,
     "image": "/images/nomena.png"
   },
@@ -73,7 +73,7 @@
       "Yaakov Cohen 12, Beer Sheva",
       "Dam HaMaccabim 55, Modiin"
     ],
-    "roastStyles": ["light", "medium", "dark", "espresso", "filter"],
+    "roastStyles": ["light", "medium", "dark", "espresso"],
     "foundedYear": 2014,
     "image": "/images/roasters.png"
   },
@@ -91,7 +91,7 @@
       "Derekh Yafo 49, Haifa (cafe)",
       "Wadi Salib 11, Haifa (roastery)"
     ],
-    "roastStyles": ["light", "medium", "specialty single-origin"],
+    "roastStyles": ["light", "medium", "single-origin"],
     "foundedYear": 2021,
     "image": "/images/naima.jpg"
   },
@@ -108,7 +108,7 @@
     "retailLocations": [
       "Hotzot Yagur, Kibbutz Yagur (roastery & cafe)"
     ],
-    "roastStyles": ["light", "medium", "dark", "urban roast"],
+    "roastStyles": ["light", "medium", "dark"],
     "foundedYear": 2012,
     "image": "/images/unico.svg"
   },
@@ -125,7 +125,7 @@
     "retailLocations": [
       "Sderot Yehudit 9, Tel Aviv (roastery & cafe)"
     ],
-    "roastStyles": ["medium", "medium-plus", "dark", "single-origin"],
+    "roastStyles": ["medium", "dark", "single-origin"],
     "foundedYear": 2007,
     "image": "/images/emilyrose.jpeg"
   },
@@ -142,7 +142,7 @@
     "retailLocations": [
       "Katif 53, Hoshaya (roastery, pickup available)"
     ],
-    "roastStyles": ["medium", "specialty single-origin"],
+    "roastStyles": ["medium", "single-origin"],
     "foundedYear": 2013,
     "image": "/images/kilimanjaro.png"
   },
@@ -159,7 +159,7 @@
     "retailLocations": [
       "Dizengoff 203, Tel Aviv (cafe & roastery)"
     ],
-    "roastStyles": ["medium", "espresso", "filter", "single-origin"],
+    "roastStyles": ["medium", "espresso", "single-origin"],
     "foundedYear": 2017,
     "image": "/images/origem.png"
   },
@@ -178,7 +178,7 @@
       "Israel Cart (online retailer)",
       "BlessedBuyIsrael (online retailer)"
     ],
-    "roastStyles": ["light", "dark", "medium", "espresso blend"],
+    "roastStyles": ["light", "medium", "dark", "espresso"],
     "foundedYear": 2016,
     "image": "/images/agrocafe.png"
   },
@@ -196,7 +196,7 @@
       "Mikveh Israel 17, Tel Aviv (cafe & roastery)",
       "Yohanan HaSandlar 23, Tel Aviv (cafe)"
     ],
-    "roastStyles": ["medium", "espresso", "single-origin", "cold brew"],
+    "roastStyles": ["medium", "espresso", "single-origin"],
     "image": "/images/waycup.png"
   }
 ]

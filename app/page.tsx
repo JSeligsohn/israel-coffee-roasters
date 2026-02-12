@@ -42,7 +42,7 @@ export default function HomePage() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-8">
-      <SearchFilter
+        <SearchFilter
         search={search}
         onSearchChange={setSearch}
         regions={regions}
@@ -53,19 +53,19 @@ export default function HomePage() {
         onRoastStyleChange={setSelectedRoastStyle}
         onlineOnly={onlineOnly}
         onOnlineOnlyChange={setOnlineOnly}
-      />
+        />
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((roaster) => (
-          <RoasterCard key={roaster.slug} roaster={roaster} />
-        ))}
-      </div>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {filtered.map((roaster) => (
+            <RoasterCard key={roaster.slug} roaster={roaster} />
+          ))}
+        </div>
 
-      {filtered.length === 0 && (
-        <p className="mt-8 text-center text-stone-500">
-          No roasters found matching your filters. Try adjusting your search.
-        </p>
-      )}
+        {filtered.length === 0 && (
+          <p className="mt-8 text-center text-stone-500">
+            No roasters found matching your filters.
+          </p>
+        )}
       </div>
     </div>
   );

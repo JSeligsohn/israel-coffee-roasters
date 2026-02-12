@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "cafelix",
+    "name": "Cafelix",
+    "nameHe": "קפליקס",
+    "city": "Tel Aviv-Jaffa",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0515, "lng": 34.7552 },
+    "description": "Founded in 2011 by Yael and Philipp Schefer, Cafelix is a pioneering artisan small-batch coffee roaster from south Tel Aviv-Jaffa. With a dedicated roasting facility on Tirza Street and multiple cafe locations across Tel Aviv, they focus on transparency and traceability in sourcing, maintaining direct contact with farmers. Cafelix was one of the first to bring genuine third-wave specialty coffee culture to Israel and has even expanded to Berlin.",
+    "website": "https://cafelix.co.il",
+    "onlineOrdering": { "available": true, "url": "https://cafelix.co.il/shop/" },
+    "retailLocations": [
+      "Sgula 13, Jaffa (cafe & espresso bar)",
+      "Tirza 17, Jaffa (roasting facility & training space)",
+      "Shlomo HaMelech 12, Tel Aviv (cafe & espresso bar)",
+      "Merkhavya 6, Tel Aviv (cafe & espresso bar)"
+    ],
+    "roastStyles": ["light", "medium", "specialty single-origin"],
+    "foundedYear": 2011,
+    "image": "/images/cafelix.svg"
+  },
+  {
+    "slug": "nahat-coffee",
+    "name": "Nahat Coffee",
+    "nameHe": "נחת קפה",
+    "city": "Tel Aviv",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0770, "lng": 34.7742 },
+    "description": "Founded in 2015 by seasoned coffee professionals Dan Urieli and Assaf Bitton (each with 20+ years in the industry), Nahat is a beloved micro-roastery and cafe just off Dizengoff Square. The name means 'contentment' in Hebrew, reflecting their philosophy that there should be pleasure at every link in the chain from farmer to cup. They vary roast profiles according to origin to highlight distinct flavors, and offer dark, medium, and light roasts across their single-origin and blended selections.",
+    "website": "https://www.nahatcoffee.com",
+    "onlineOrdering": { "available": true, "url": "https://www.nahatcoffee.com" },
+    "retailLocations": [
+      "HaRav Reines 1, Tel Aviv (flagship cafe & roastery)",
+      "HaRav Reines 20, Tel Aviv",
+      "HaTachana, Ashkelon 16 Street",
+      "Cafe Esther, 1 Zamenhof Street, Dizengoff Square, Tel Aviv"
+    ],
+    "roastStyles": ["light", "medium", "dark", "single-origin"],
+    "foundedYear": 2015,
+    "image": "/images/nahat.png"
+  },
+  {
+    "slug": "nomena-roasters",
+    "name": "Nomena Roasters",
+    "nameHe": "נומנה",
+    "city": "Tel Aviv",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0653, "lng": 34.7694 },
+    "description": "Nomena is a specialty coffee roastery situated in a beautifully preserved building on central Allenby Street in Tel Aviv. They roast four times a week to ensure maximum freshness, bringing specially sourced bean varieties roasted to highlight their distinct attributes. The 160-square-meter space includes an open roasting area visible to customers, a service counter, and seating areas, creating an immersive coffee experience where you can watch the craft in action.",
+    "website": "https://nomenaroasters.com",
+    "onlineOrdering": { "available": true, "url": "https://nomenaroasters.com" },
+    "retailLocations": [
+      "Allenby 54, Tel Aviv (cafe & roastery)"
+    ],
+    "roastStyles": ["medium", "medium-dark", "espresso", "filter"],
+    "foundedYear": 2024,
+    "image": "/images/nomena.png"
+  },
+  {
+    "slug": "roasters-jerusalem",
+    "name": "Roasters",
+    "nameHe": "רוסטרס",
+    "city": "Jerusalem",
+    "region": "Jerusalem",
+    "coordinates": { "lat": 31.7850, "lng": 35.2120 },
+    "description": "Established in 2014, Roasters was the first to roast its own beans right in the heart of Jerusalem's bustling Mahane Yehuda market. They source green coffee from 15 different destinations worldwide across South America, Africa, and Asia, roasting on-site with advanced roasting machines. Self-described as 'the leading third wave coffee chain in Israel,' they have expanded to multiple branches and also supply coffee to restaurants, cafes, and offices.",
+    "website": "https://roastersjlm.co.il",
+    "onlineOrdering": { "available": true, "url": "https://roastersjlm.co.il" },
+    "retailLocations": [
+      "HaAfarsek 20, Mahane Yehuda Market, Jerusalem (original)",
+      "Corner of Bezalel & Shmuel HaNagid, Jerusalem",
+      "Roasters Academy, Bezalel Academy, Russian Compound, Jerusalem",
+      "Yaakov Cohen 12, Beer Sheva",
+      "Dam HaMaccabim 55, Modiin"
+    ],
+    "roastStyles": ["light", "medium", "dark", "espresso", "filter"],
+    "foundedYear": 2014,
+    "image": "/images/roasters.png"
+  },
+  {
+    "slug": "cafe-naima",
+    "name": "Cafe Naima",
+    "nameHe": "קפה נעימה",
+    "city": "Haifa",
+    "region": "North",
+    "coordinates": { "lat": 32.8152, "lng": 34.9925 },
+    "description": "Cafe Naima is a specialty coffee roastery in downtown Haifa that opened in 2021 with the goal of creating an inclusive hub for specialty coffee exploration. Their separate roastery in the historic Wadi Salib neighborhood serves as a 'coffee lab' where customers can witness the entire process from green bean to cup. Haifa has a long-standing coffee culture, and Naima contributes to it by hosting community cupping events and prioritizing fair-trade sourcing and high bean quality.",
+    "website": "https://www.naima-coffee.com",
+    "onlineOrdering": { "available": false },
+    "retailLocations": [
+      "Derekh Yafo 49, Haifa (cafe)",
+      "Wadi Salib 11, Haifa (roastery)"
+    ],
+    "roastStyles": ["light", "medium", "specialty single-origin"],
+    "foundedYear": 2021,
+    "image": "/images/naima.jpg"
+  },
+  {
+    "slug": "unico",
+    "name": "Unico Coffee Roasting House",
+    "nameHe": "יוניקו קפה",
+    "city": "Yagur",
+    "region": "North",
+    "coordinates": { "lat": 32.7433, "lng": 35.0700 },
+    "description": "Founded in 2012 by Assaf Rips, a certified cupper and barista instructor, Unico is a boutique roasting house at the foot of Mount Carmel at the entrance to Kibbutz Yagur. Offering over 35 types of fresh coffee in various roasts from light to dark, Unico's mission is to expose the rich, deep, and fascinating world of specialty coffee to everyone. They source specialty beans globally and maintain an uncompromising boutique approach to roasting.",
+    "website": "https://unicoffee.co.il",
+    "onlineOrdering": { "available": true, "url": "https://unicoffee.co.il/shop/" },
+    "retailLocations": [
+      "Hotzot Yagur, Kibbutz Yagur (roastery & cafe)"
+    ],
+    "roastStyles": ["light", "medium", "dark", "urban roast"],
+    "foundedYear": 2012,
+    "image": "/images/unico.svg"
+  },
+  {
+    "slug": "emily-rose",
+    "name": "Emily Rose Coffee Roasters",
+    "nameHe": "אמילי רוז קפה",
+    "city": "Tel Aviv",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0573, "lng": 34.7705 },
+    "description": "Operating in Tel Aviv since 2007, Emily Rose is one of Israel's more established artisan roasteries. What started as a small initiative out of love for coffee has evolved into a roastery committed to quality, freshness, and professionalism. They offer 10 house blends and an impressive range of single-origin coffees from Africa, Asia, and South America, with detailed flavor profiling including tasting notes for sweetness, acidity, and body intensity. Free delivery on orders of 2kg or more.",
+    "website": "https://www.emilyrose.co.il",
+    "onlineOrdering": { "available": true, "url": "https://www.emilyrose.co.il" },
+    "retailLocations": [
+      "Sderot Yehudit 9, Tel Aviv (roastery & cafe)"
+    ],
+    "roastStyles": ["medium", "medium-plus", "dark", "single-origin"],
+    "foundedYear": 2007,
+    "image": "/images/emilyrose.jpeg"
+  },
+  {
+    "slug": "kilimanjaro-coffee",
+    "name": "Kilimanjaro Coffee",
+    "nameHe": "קילימנג'רו קפה",
+    "city": "Hoshaya",
+    "region": "North",
+    "coordinates": { "lat": 32.7579, "lng": 35.2952 },
+    "description": "Founded by David Strausberg, a former Microsoft Israel technical writer who fell in love with coffee during a family trip to Mt. Kilimanjaro in Tanzania, Kilimanjaro Coffee is an artisan small-batch roastery in the village of Hoshaya in the Jezreel Valley. They focus on balanced medium roasts that highlight clarity, sweetness, and balance, roasting seasonal single-origin beans fresh to order. Also known as Lion of Zion Coffee, they ship across Israel and internationally.",
+    "website": "https://www.kilimancoffee.com",
+    "onlineOrdering": { "available": true, "url": "https://www.kilimancoffee.com/shop" },
+    "retailLocations": [
+      "Katif 53, Hoshaya (roastery, pickup available)"
+    ],
+    "roastStyles": ["medium", "specialty single-origin"],
+    "foundedYear": 2013,
+    "image": "/images/kilimanjaro.png"
+  },
+  {
+    "slug": "origem",
+    "name": "Origem Specialty Coffee",
+    "nameHe": "אוריג'ם קפה",
+    "city": "Tel Aviv",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0912, "lng": 34.7813 },
+    "description": "Opened in May 2017 by Georgia and Marcelo Szporer, who moved from Brazil where they ran the Feito a Grao chain, Origem brings authentic Brazilian coffee expertise to north Tel Aviv. They source, roast, and serve coffee from various origins around the world in their cozy Dizengoff Street shop. The cafe pairs specialty coffee with Brazilian pastries and snacks, offering espressos, cappuccinos, filtered coffee, chemex, french press, and cold brew.",
+    "website": "https://www.origem.co.il",
+    "onlineOrdering": { "available": true, "url": "https://www.origem.co.il" },
+    "retailLocations": [
+      "Dizengoff 203, Tel Aviv (cafe & roastery)"
+    ],
+    "roastStyles": ["medium", "espresso", "filter", "single-origin"],
+    "foundedYear": 2017,
+    "image": "/images/origem.png"
+  },
+  {
+    "slug": "agrocafe",
+    "name": "AgroCafe",
+    "nameHe": "אגרוקפה",
+    "city": "Srigim-Li On",
+    "region": "Jerusalem",
+    "coordinates": { "lat": 31.7200, "lng": 34.9800 },
+    "description": "Founded in 2016 by Hanan Elkayam in the Ella Valley hills near Beit Shemesh, AgroCafe is unique among Israeli roasters for combining coffee roasting with agricultural innovation. They are dedicated to supporting small family-owned coffee farms globally in their fight against climate change, using cutting-edge Israeli technology to enhance plantation yields. Every package is roasted to order for maximum freshness. Their visitor center offers workshops and tours of the roasting facility.",
+    "website": "https://agrocafe.co.il",
+    "onlineOrdering": { "available": true, "url": "https://agrocafe.co.il" },
+    "retailLocations": [
+      "Eshkolot 40, Srigim-Li On (visitor center & cafe)",
+      "Israel Cart (online retailer)",
+      "BlessedBuyIsrael (online retailer)"
+    ],
+    "roastStyles": ["light", "dark", "medium", "espresso blend"],
+    "foundedYear": 2016,
+    "image": "/images/agrocafe.png"
+  },
+  {
+    "slug": "waycup",
+    "name": "WayCup Coffee",
+    "nameHe": "ווייקאפ קפה",
+    "city": "Tel Aviv",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0650, "lng": 34.7730 },
+    "description": "WayCup TLV is a local micro-roastery and coffee shop in Tel Aviv that roasts daily, offering a rotating selection of coffee blends and single-origin beans. What began as a tiny roasting operation has grown into one of Tel Aviv's most beloved specialty coffee destinations, known for quality over flash. With skilled baristas and minimalist design across two locations, the friendly team is always happy to discuss flavor profiles or recommend a new roast.",
+    "website": "https://www.waycuptlv.com",
+    "onlineOrdering": { "available": true, "url": "https://home.waycuptlv.com" },
+    "retailLocations": [
+      "Mikveh Israel 17, Tel Aviv (cafe & roastery)",
+      "Yohanan HaSandlar 23, Tel Aviv (cafe)"
+    ],
+    "roastStyles": ["medium", "espresso", "single-origin", "cold brew"],
+    "image": "/images/waycup.png"
+  }
+]

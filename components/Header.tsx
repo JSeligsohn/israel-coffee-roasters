@@ -26,6 +26,12 @@ export default function Header() {
           >
             Why Local?
           </Link>
+          <Link
+            href="/contact"
+            className="text-stone-600 hover:text-stone-900 transition-colors"
+          >
+            Contact
+          </Link>
         </div>
       </nav>
     </header>

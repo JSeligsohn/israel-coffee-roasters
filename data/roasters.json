@@ -198,5 +198,141 @@
     ],
     "roastStyles": ["medium", "espresso", "single-origin"],
     "image": "/images/waycup.png"
+  },
+  {
+    "slug": "ava-coffee",
+    "name": "AVA Coffee",
+    "nameHe": "אווה קפה",
+    "city": "Haifa",
+    "region": "North",
+    "coordinates": { "lat": 32.8178, "lng": 34.9879 },
+    "description": "Israel's oldest coffee roasting house, AVA opened in 1941 in downtown Haifa — before Israeli statehood. Their factory outlet on Hakitor Street has been supplying cafes, restaurants, and private clients for over 80 years, and their cafe on Derech HaAtsma'ut became a fixture of Haifa's working class. Today AVA boasts the largest rare coffee bean assemblage in Israel, offering dozens of varieties across light, medium, and dark roasts, as well as unique wood-fire roasted options with flavors like hazelnut and citrus. Online ordering is available through their website.",
+    "website": "https://eng.avacoffee.com",
+    "onlineOrdering": { "available": true, "url": "https://eng.avacoffee.com" },
+    "retailLocations": [
+      "Hakitor 34, Haifa (factory outlet & roastery)",
+      "Derech HaAtsma'ut 51, Haifa (historic cafe, currently closed for renovations)"
+    ],
+    "roastStyles": ["light", "medium", "dark"],
+    "foundedYear": 1941,
+    "image": "/images/ava-coffee.png"
+  },
+  {
+    "slug": "sybaris",
+    "name": "Sybaris Specialty Coffee",
+    "nameHe": "סיבריס קפה",
+    "city": "Jerusalem",
+    "region": "Jerusalem",
+    "coordinates": { "lat": 31.7701, "lng": 35.2133 },
+    "description": "A specialty roastery-café in the leafy Rehavia neighborhood of Jerusalem, roasting all coffee on-site. Sybaris sources single-origin beans from Brazil, El Salvador, Mexico, Nicaragua, and Rwanda, serving them as espresso or pour-over alongside homemade pastries. Opened in 2021, it quickly outgrew its original spot and expanded to a second location across Azza Street. Online ordering is available through their website for beans shipped across Israel.",
+    "website": "https://www.sybariscoffee.com",
+    "onlineOrdering": { "available": true, "url": "https://www.sybariscoffee.com/shop" },
+    "retailLocations": [
+      "Azza 13, Rehavia, Jerusalem (cafe & roastery)",
+      "Azza 20, Rehavia, Jerusalem (second location)"
+    ],
+    "roastStyles": ["light", "medium", "single-origin", "espresso"],
+    "foundedYear": 2021,
+    "image": "/images/sybaris.jpg"
+  },
+  {
+    "slug": "jera-coffee",
+    "name": "Jera Coffee",
+    "nameHe": "ג'רה קפה",
+    "city": "Tel Aviv",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0860, "lng": 34.7812 },
+    "description": "A specialty micro-roastery co-founded by Anton Wolfman and Marina Uvarov, known for printing the exact roast date on every package. Jera sources high-grade specialty coffee from origins across Africa, Asia, and the Americas, roasting to highlight each bean's distinct characteristics. Uniquely, they also sell green (unroasted) coffee beans for home roasters. With locations in Tel Aviv and Rishon LeZion, Jera has become a destination for serious coffee enthusiasts across central Israel.",
+    "website": "https://www.jera-coffee.co.il",
+    "onlineOrdering": { "available": true, "url": "https://www.jera-coffee.co.il" },
+    "retailLocations": [
+      "Ibn Gvirol 54, Tel Aviv (cafe & roastery)",
+      "Zeev Shlang 5, Rishon LeZion",
+      "Moreset Israel 15, Rishon LeZion"
+    ],
+    "roastStyles": ["light", "medium", "single-origin"],
+    "foundedYear": 2017,
+    "image": "/images/jera-coffee.png"
+  },
+  {
+    "slug": "lev-coffee",
+    "name": "Lev Coffee",
+    "nameHe": "לב קפה",
+    "city": "Jerusalem",
+    "region": "Jerusalem",
+    "coordinates": { "lat": 31.7601, "lng": 35.2162 },
+    "description": "Named for the Hebrew word for 'heart,' Lev is a specialty coffee roastery rooted in Jerusalem's Baka neighborhood. They hand-select beans from regenerative and fair-trade farms worldwide, roasting them in Jerusalem to bring out each origin's fullest flavor. Their motto — 'Flavor N' Soul' — captures their belief that great coffee carries both craft and conscience. Lev offers both espresso and filter roasts, available online and wholesale to cafes around Israel.",
+    "website": "https://www.lev.coffee",
+    "onlineOrdering": { "available": true, "url": "https://www.lev.coffee" },
+    "retailLocations": [
+      "Baka neighborhood, Jerusalem (cafe & roastery)"
+    ],
+    "roastStyles": ["light", "medium", "single-origin", "espresso"]
+  },
+  {
+    "slug": "power-coffeeworks",
+    "name": "Power Coffeeworks",
+    "nameHe": "פאוור קפה",
+    "city": "Jerusalem",
+    "region": "Jerusalem",
+    "coordinates": { "lat": 31.7834, "lng": 35.2146 },
+    "description": "Founded by South African immigrants Stephanie and Brandon Treger, who made aliyah in 2016 and were struck by the lack of excellent roasted coffee in Jerusalem. Brandon trained as a master roaster and coffee sommelier, and now crafts 18+ varieties across light, medium, and dark roasts — grinding every cup fresh to order. Located on Yaffo Street near Machane Yehuda in a distinctive steampunk-styled space, Power Coffeeworks has earned a loyal following among Jerusalem coffee lovers.",
+    "website": "https://www.powercoffeeworksjerusalem.com",
+    "onlineOrdering": { "available": true, "url": "https://www.powercoffeeworksjerusalem.com" },
+    "retailLocations": [
+      "Yaffo 105, Jerusalem (cafe & roastery)"
+    ],
+    "roastStyles": ["light", "medium", "dark", "single-origin"],
+    "foundedYear": 2016,
+    "image": "/images/power-coffeeworks.png"
+  },
+  {
+    "slug": "birma-coffee",
+    "name": "Birma Coffee",
+    "nameHe": "בירמה קפה",
+    "city": "Jerusalem",
+    "region": "Jerusalem",
+    "coordinates": { "lat": 31.7588, "lng": 35.2199 },
+    "description": "Opened in 2021 by brothers Michael and Daniel Ronen, Birma is a small specialty roastery and café in Jerusalem's charming German Colony neighborhood. The brothers drew inspiration from their grandfather's celebrated coffee shop in Iraq, combining family legacy with rigorous modern craft. Birma earned the Specialty Coffee Association (SCA) quality seal and won 'Best Coffee 2022' by SHOTIM magazine. Every order — whether in the cafe or online — is roasted and ground fresh on the spot.",
+    "website": "https://www.birmacoffee.com",
+    "onlineOrdering": { "available": true, "url": "https://www.birmacoffee.com" },
+    "retailLocations": [
+      "Emek Refaim 20, German Colony, Jerusalem (cafe & roastery)"
+    ],
+    "roastStyles": ["medium", "dark", "single-origin", "espresso"],
+    "foundedYear": 2021
+  },
+  {
+    "slug": "coffee-organization",
+    "name": "Coffee Organization",
+    "nameHe": "ארגון הקפה",
+    "city": "Tel Aviv",
+    "region": "Tel Aviv",
+    "coordinates": { "lat": 32.0664, "lng": 34.7748 },
+    "description": "Founded by Tal Bodenstein in the mid-1990s after discovering an ancient Neapolitan roasting tradition — a family in a Naples basement using centuries-old oak- and olive-wood-fired ovens. Inspired by that encounter, Coffee Organization was built around an 'extremely slow' roasting method with full human control, roasting 100% organic Arabica for maximum flavor extraction. They maintain direct-trade relationships with small family farms and uphold fair-trade principles. Their coffee studio on Mikve Israel Street in Tel Aviv hosts cupping sessions, custom roasting experiences, and monthly workshops.",
+    "website": "https://coffeeorg.co",
+    "onlineOrdering": { "available": true, "url": "https://coffeeorg.co" },
+    "retailLocations": [
+      "Mikve Israel 3, Tel Aviv (coffee studio & roastery)"
+    ],
+    "roastStyles": ["medium", "dark", "espresso"],
+    "foundedYear": 1996,
+    "image": "/images/coffee-organization.png"
+  },
+  {
+    "slug": "shuk-kaffe",
+    "name": "Shuk Kaffe",
+    "nameHe": "שוקפה",
+    "city": "Jerusalem",
+    "region": "Jerusalem",
+    "coordinates": { "lat": 31.7843, "lng": 35.2130 },
+    "description": "Founded by Barak Lev-Ran over two decades ago using a traditional wood-fired roasting machine, Shuk Kaffe is one of the most storied roasteries in the Machane Yehuda market. Barak built his knowledge travelling the coffee world, then chose to focus on small-batch single-origin roasting — a rarity when he started. Today the roastery covers the full spectrum: light single-origins, filter blends, espresso blends, and traditional mud (Turkish) coffee, and even offers custom roasting by request from a single cup to several kilograms. Popular offerings include Mocha Java, Naples Espresso, Nicaragua, and Ethiopia Nano Chelia.",
+    "website": "https://www.shukaffe.co.il",
+    "onlineOrdering": { "available": true, "url": "https://www.shukaffe.co.il" },
+    "retailLocations": [
+      "HaAfarsek 8, Machane Yehuda Market, Jerusalem (roastery & shop)"
+    ],
+    "roastStyles": ["light", "medium", "dark", "single-origin", "espresso"],
+    "image": "/images/shuk-kaffe.png"
   }
 ]

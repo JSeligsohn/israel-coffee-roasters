@@ -2,6 +2,22 @@ import Link from "next/link";
 import Image from "next/image";
 import { Roaster } from "@/lib/types";
 
+const ROAST_STYLE_CLASSES: Record<string, string> = {
+  light:           "bg-yellow-50 text-yellow-700",
+  medium:          "bg-amber-50 text-amber-700",
+  dark:            "bg-stone-200 text-stone-800",
+  "single-origin": "bg-teal-50 text-teal-700",
+  espresso:        "bg-orange-100 text-orange-800",
+};
+
+const ROAST_STYLE_LABELS: Record<string, string> = {
+  light:           "Light",
+  medium:          "Medium",
+  dark:            "Dark",
+  "single-origin": "Single-Origin",
+  espresso:        "Espresso",
+};
+
 export default function RoasterCard({ roaster }: { roaster: Roaster }) {
   return (
     <Link
@@ -31,8 +47,11 @@ export default function RoasterCard({ roaster }: { roaster: Roaster }) {
               </span>
             )}
           </div>
-          <p className="mt-1 text-sm text-stone-500">
+          <p className="mt-0.5 text-sm text-stone-500">
             {roaster.city} &middot; {roaster.region}
+            {roaster.foundedYear && (
+              <span className="text-stone-400"> &middot; Est. {roaster.foundedYear}</span>
+            )}
           </p>
         </div>
       </div>
@@ -43,9 +62,11 @@ export default function RoasterCard({ roaster }: { roaster: Roaster }) {
         {roaster.roastStyles.map((style) => (
           <span
             key={style}
-            className="rounded-full bg-stone-100 px-2.5 py-0.5 text-xs font-medium text-stone-600"
+            className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
+              ROAST_STYLE_CLASSES[style] ?? "bg-stone-100 text-stone-600"
+            }`}
           >
-            {style}
+            {ROAST_STYLE_LABELS[style] ?? style}
           </span>
         ))}
       </div>

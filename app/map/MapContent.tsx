@@ -46,7 +46,6 @@ export default function MapContent() {
       .sort((a, b) => a.distKm - b.distKm);
     const top = sorted.slice(0, 5);
     setNearest(top);
-    // Fit map to user location + nearest markers
     setFitCoords([
       [loc.lat, loc.lng],
       ...top.map((r): [number, number] => [r.coordinates.lat, r.coordinates.lng]),
@@ -105,10 +104,10 @@ export default function MapContent() {
   }
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6 flex flex-col" style={{ height: "calc(100vh - 72px)" }}>
+    <div className="mx-auto max-w-6xl px-4 py-4 sm:py-6 flex flex-col" style={{ height: "calc(100dvh - 72px)" }}>
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between shrink-0">
-        <h1 className="text-2xl font-bold text-stone-900">Roaster Map</h1>
+      <div className="mb-3 flex items-center justify-between shrink-0">
+        <h1 className="text-xl font-bold text-stone-900 sm:text-2xl">Roaster Map</h1>
         <Link href="/" className="text-sm text-stone-500 hover:text-stone-700 transition-colors">
           &larr; Back to list
         </Link>
@@ -120,24 +119,24 @@ export default function MapContent() {
           onClick={handleGeolocate}
           disabled={status === "loading"}
           title="Use my current location"
-          className="shrink-0 flex items-center gap-1.5 rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm font-medium text-stone-700 hover:bg-stone-50 transition-colors disabled:opacity-50"
+          className="shrink-0 flex items-center gap-1.5 rounded-lg border border-stone-200 bg-white px-2.5 py-2 text-sm font-medium text-stone-700 hover:bg-stone-50 transition-colors disabled:opacity-50"
         >
-          📍 My location
+          📍 <span className="hidden sm:inline">My location</span>
         </button>
         <input
           type="text"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSearch()}
-          placeholder="Enter address or neighborhood…"
-          className="flex-1 rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 placeholder:text-stone-400 focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 transition-colors"
+          placeholder="Address or neighborhood…"
+          className="flex-1 min-w-0 rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 placeholder:text-stone-400 focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 transition-colors"
         />
         <button
           onClick={handleSearch}
           disabled={status === "loading"}
-          className="shrink-0 rounded-lg bg-amber-700 px-4 py-2 text-sm font-medium text-white hover:bg-amber-800 transition-colors disabled:opacity-50"
+          className="shrink-0 rounded-lg bg-amber-700 px-3 sm:px-4 py-2 text-sm font-medium text-white hover:bg-amber-800 transition-colors disabled:opacity-50"
         >
-          {status === "loading" ? "Searching…" : "Search"}
+          {status === "loading" ? "…" : "Search"}
         </button>
       </div>
 
@@ -146,42 +145,9 @@ export default function MapContent() {
       )}
 
       {/* Map + optional nearest panel */}
-      <div className="flex flex-1 gap-3 min-h-0">
-        {/* Nearest panel */}
-        {nearest.length > 0 && (
-          <div className="w-60 shrink-0 flex flex-col gap-2 overflow-y-auto pr-1">
-            <p className="text-xs font-semibold text-stone-400 uppercase tracking-wide shrink-0">
-              Nearest roasters
-            </p>
-            {nearest.map((r, i) => (
-              <button
-                key={r.slug}
-                onClick={() => flyRef.current?.(r.slug, r.coordinates.lat, r.coordinates.lng)}
-                className="text-left rounded-lg border border-stone-200 bg-white p-3 hover:border-amber-300 hover:shadow-sm transition-all shrink-0"
-              >
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-stone-300 w-4 shrink-0">{i + 1}</span>
-                  {r.image ? (
-                    <div className="w-8 h-8 rounded bg-stone-50 border border-stone-100 flex items-center justify-center overflow-hidden p-0.5 shrink-0">
-                      <img src={r.image} alt={r.name} className="w-full h-full object-contain" />
-                    </div>
-                  ) : (
-                    <div className="w-8 h-8 rounded bg-stone-100 flex items-center justify-center shrink-0 text-base">
-                      ☕
-                    </div>
-                  )}
-                  <div className="min-w-0 flex-1">
-                    <p className="text-sm font-semibold text-stone-900 truncate leading-tight">{r.name}</p>
-                    <p className="text-xs text-stone-400">{formatDist(r.distKm)}</p>
-                  </div>
-                </div>
-              </button>
-            ))}
-          </div>
-        )}
-
+      <div className="flex flex-col sm:flex-row flex-1 gap-3 min-h-0">
         {/* Map */}
-        <div className="flex-1 min-h-0">
+        <div className="flex-1 min-h-0" style={{ minHeight: nearest.length > 0 ? undefined : "100%" }}>
           <link
             rel="stylesheet"
             href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -195,6 +161,69 @@ export default function MapContent() {
             fitCoords={fitCoords}
           />
         </div>
+
+        {/* Nearest panel — horizontal scroll on mobile, sidebar on desktop */}
+        {nearest.length > 0 && (
+          <>
+            {/* Mobile: horizontal scrolling strip */}
+            <div className="sm:hidden shrink-0 flex gap-2 overflow-x-auto pb-1 -mx-4 px-4">
+              <p className="shrink-0 self-center text-xs font-semibold text-stone-400 uppercase tracking-wide pr-1">
+                Nearest:
+              </p>
+              {nearest.map((r, i) => (
+                <button
+                  key={r.slug}
+                  onClick={() => flyRef.current?.(r.slug, r.coordinates.lat, r.coordinates.lng)}
+                  className="shrink-0 flex items-center gap-2 rounded-lg border border-stone-200 bg-white px-3 py-2 hover:border-amber-300 transition-all"
+                >
+                  <span className="text-xs font-bold text-stone-300 w-3">{i + 1}</span>
+                  {r.image ? (
+                    <div className="w-6 h-6 rounded bg-stone-50 border border-stone-100 flex items-center justify-center overflow-hidden p-0.5 shrink-0">
+                      <img src={r.image} alt={r.name} className="w-full h-full object-contain" />
+                    </div>
+                  ) : (
+                    <span className="text-sm">☕</span>
+                  )}
+                  <div className="text-left">
+                    <p className="text-xs font-semibold text-stone-900 whitespace-nowrap">{r.name}</p>
+                    <p className="text-xs text-stone-400">{formatDist(r.distKm)}</p>
+                  </div>
+                </button>
+              ))}
+            </div>
+
+            {/* Desktop: vertical sidebar */}
+            <div className="hidden sm:flex w-60 shrink-0 flex-col gap-2 overflow-y-auto pr-1">
+              <p className="text-xs font-semibold text-stone-400 uppercase tracking-wide shrink-0">
+                Nearest roasters
+              </p>
+              {nearest.map((r, i) => (
+                <button
+                  key={r.slug}
+                  onClick={() => flyRef.current?.(r.slug, r.coordinates.lat, r.coordinates.lng)}
+                  className="text-left rounded-lg border border-stone-200 bg-white p-3 hover:border-amber-300 hover:shadow-sm transition-all shrink-0"
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-stone-300 w-4 shrink-0">{i + 1}</span>
+                    {r.image ? (
+                      <div className="w-8 h-8 rounded bg-stone-50 border border-stone-100 flex items-center justify-center overflow-hidden p-0.5 shrink-0">
+                        <img src={r.image} alt={r.name} className="w-full h-full object-contain" />
+                      </div>
+                    ) : (
+                      <div className="w-8 h-8 rounded bg-stone-100 flex items-center justify-center shrink-0 text-base">
+                        ☕
+                      </div>
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold text-stone-900 truncate leading-tight">{r.name}</p>
+                      <p className="text-xs text-stone-400">{formatDist(r.distKm)}</p>
+                    </div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

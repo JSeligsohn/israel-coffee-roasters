@@ -26,14 +26,14 @@ export default function HomePage() {
     <div>
       {/* Hero banner */}
       <div className="bg-gradient-to-br from-amber-800 via-amber-900 to-stone-900 text-white">
-        <div className="mx-auto max-w-3xl px-4 py-16 text-center">
-          <div className="flex justify-center gap-3 mb-6">
-            <span className="text-5xl">☕</span>
+        <div className="mx-auto max-w-3xl px-4 py-10 sm:py-16 text-center">
+          <div className="flex justify-center gap-3 mb-4 sm:mb-6">
+            <span className="text-4xl sm:text-5xl">☕</span>
           </div>
-          <h1 className="text-3xl font-bold sm:text-4xl">
+          <h1 className="text-2xl font-bold sm:text-4xl">
             Israel Coffee Roasters
           </h1>
-          <p className="mt-4 text-lg text-amber-100 max-w-xl mx-auto">
+          <p className="mt-3 text-base sm:text-lg text-amber-100 max-w-xl mx-auto">
             Discover specialty coffee roasters from across Israel &mdash; from
             the bustling streets of Tel Aviv to the hills of Jerusalem and
             beyond.

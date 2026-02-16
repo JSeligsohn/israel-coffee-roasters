@@ -8,7 +8,7 @@ export const metadata = {
 
 function CoffeeBeansIcon() {
   return (
-    <svg viewBox="0 0 64 64" fill="none" className="h-10 w-10" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="none" className="h-8 w-8 sm:h-10 sm:w-10" aria-hidden="true">
       <ellipse cx="22" cy="32" rx="14" ry="20" className="fill-amber-100 stroke-amber-600" strokeWidth="2" />
       <path d="M22 12c-3 7-3 19 0 26s3 7 0 14" className="stroke-amber-600" strokeWidth="1.5" fill="none" />
       <ellipse cx="42" cy="32" rx="14" ry="20" className="fill-amber-100 stroke-amber-600" strokeWidth="2" />
@@ -19,7 +19,7 @@ function CoffeeBeansIcon() {
 
 function TimerIcon() {
   return (
-    <svg viewBox="0 0 64 64" fill="none" className="h-10 w-10" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="none" className="h-8 w-8 sm:h-10 sm:w-10" aria-hidden="true">
       <circle cx="32" cy="36" r="22" className="fill-amber-50 stroke-amber-600" strokeWidth="2" />
       <rect x="29" y="6" width="6" height="6" rx="1" className="fill-amber-600" />
       <line x1="32" y1="36" x2="32" y2="22" className="stroke-amber-700" strokeWidth="2.5" strokeLinecap="round" />
@@ -31,7 +31,7 @@ function TimerIcon() {
 
 function HeartHandsIcon() {
   return (
-    <svg viewBox="0 0 64 64" fill="none" className="h-10 w-10" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="none" className="h-8 w-8 sm:h-10 sm:w-10" aria-hidden="true">
       <path d="M32 52 C16 40 8 30 8 22a10 10 0 0 1 10-10c4 0 8 2 10 5v0" className="fill-red-50 stroke-red-400" strokeWidth="2" />
       <path d="M32 52 C48 40 56 30 56 22a10 10 0 0 0-10-10c-4 0-8 2-10 5v0" className="fill-red-50 stroke-red-400" strokeWidth="2" />
       <path d="M16 56c4-4 8-6 16-6s12 2 16 6" className="stroke-amber-600" strokeWidth="2" strokeLinecap="round" fill="none" />
@@ -41,7 +41,7 @@ function HeartHandsIcon() {
 
 function StarIcon() {
   return (
-    <svg viewBox="0 0 64 64" fill="none" className="h-10 w-10" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="none" className="h-8 w-8 sm:h-10 sm:w-10" aria-hidden="true">
       <polygon
         points="32,6 39,24 58,24 43,36 48,54 32,44 16,54 21,36 6,24 25,24"
         className="fill-amber-100 stroke-amber-600"
@@ -54,7 +54,7 @@ function StarIcon() {
 
 function CupIcon() {
   return (
-    <svg viewBox="0 0 64 64" fill="none" className="h-10 w-10" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="none" className="h-8 w-8 sm:h-10 sm:w-10" aria-hidden="true">
       <rect x="12" y="20" width="32" height="30" rx="4" className="fill-amber-50 stroke-amber-600" strokeWidth="2" />
       <path d="M44 28h8a6 6 0 0 1 0 12h-8" className="stroke-amber-600" strokeWidth="2" fill="none" />
       <path d="M18 52h20v4a2 2 0 0 1-2 2H20a2 2 0 0 1-2-2v-4z" className="fill-amber-200 stroke-amber-600" strokeWidth="2" />
@@ -68,14 +68,14 @@ export default function AboutPage() {
     <div>
       {/* Hero banner */}
       <div className="bg-gradient-to-br from-amber-800 via-amber-900 to-stone-900 text-white">
-        <div className="mx-auto max-w-3xl px-4 py-16 text-center">
-          <div className="flex justify-center gap-3 mb-6">
-            <span className="text-5xl">☕</span>
+        <div className="mx-auto max-w-3xl px-4 py-10 sm:py-16 text-center">
+          <div className="flex justify-center gap-3 mb-4 sm:mb-6">
+            <span className="text-4xl sm:text-5xl">☕</span>
           </div>
-          <h1 className="text-3xl font-bold sm:text-4xl">
+          <h1 className="text-2xl font-bold sm:text-4xl">
             Why Buy Local Coffee?
           </h1>
-          <p className="mt-4 text-lg text-amber-100 max-w-xl mx-auto">
+          <p className="mt-3 text-base sm:text-lg text-amber-100 max-w-xl mx-auto">
             The best coffee doesn't come from a global chain — it comes from
             passionate roasters right here in Israel, roasting beans days before
             they reach your cup.
@@ -85,7 +85,7 @@ export default function AboutPage() {
 
       <div className="mx-auto max-w-3xl px-4 py-12">
         {/* Intro */}
-        <p className="text-lg text-stone-600 leading-relaxed text-center max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-stone-600 leading-relaxed text-center max-w-2xl mx-auto">
           Many people assume great coffee has to come from Starbucks, Italy, or
           some exotic far-off place. But here's a secret every coffee
           professional knows:{" "}
@@ -95,7 +95,7 @@ export default function AboutPage() {
 
         {/* Cards */}
         <div className="mt-12 space-y-6">
-          <div className="rounded-xl border border-stone-200 bg-white p-6 sm:p-8 flex gap-5">
+          <div className="rounded-xl border border-stone-200 bg-white p-5 sm:p-8 flex gap-4 sm:gap-5">
             <div className="shrink-0 mt-1">
               <TimerIcon />
             </div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="rounded-xl border border-stone-200 bg-white p-6 sm:p-8 flex gap-5">
+          <div className="rounded-xl border border-stone-200 bg-white p-5 sm:p-8 flex gap-4 sm:gap-5">
             <div className="shrink-0 mt-1">
               <CoffeeBeansIcon />
             </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="rounded-xl border border-stone-200 bg-white p-6 sm:p-8 flex gap-5">
+          <div className="rounded-xl border border-stone-200 bg-white p-5 sm:p-8 flex gap-4 sm:gap-5">
             <div className="shrink-0 mt-1">
               <HeartHandsIcon />
             </div>
@@ -152,7 +152,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="rounded-xl border border-stone-200 bg-white p-6 sm:p-8 flex gap-5">
+          <div className="rounded-xl border border-stone-200 bg-white p-5 sm:p-8 flex gap-4 sm:gap-5">
             <div className="shrink-0 mt-1">
               <StarIcon />
             </div>

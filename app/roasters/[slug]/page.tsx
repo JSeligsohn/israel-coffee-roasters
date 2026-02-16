@@ -96,7 +96,7 @@ export default async function RoasterPage({
               href={roaster.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-1 inline-block text-amber-700 hover:text-amber-800 underline underline-offset-2"
+              className="mt-1 inline-block text-amber-700 hover:text-amber-800 underline underline-offset-2 break-all"
             >
               {roaster.website}
             </a>
@@ -112,7 +112,7 @@ export default async function RoasterPage({
                   href={roaster.onlineOrdering.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 inline-flex items-center gap-1 rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition-colors"
+                  className="mt-1 inline-flex w-full sm:w-auto items-center justify-center gap-1 rounded-lg bg-green-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-green-700 transition-colors"
                 >
                   Order Online &rarr;
                 </a>

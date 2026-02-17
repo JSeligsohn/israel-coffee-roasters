@@ -334,5 +334,21 @@
     ],
     "roastStyles": ["light", "medium", "dark", "single-origin", "espresso"],
     "image": "/images/shuk-kaffe.png"
+  },
+  {
+    "slug": "rooster-coffee",
+    "name": "Rooster Coffee",
+    "nameHe": "רוסטר",
+    "city": "Pardes Hanna",
+    "region": "Center",
+    "coordinates": { "lat": 32.4672, "lng": 34.9668 },
+    "description": "A boutique roasting house based in Pardes Hanna, Rooster Coffee focuses on crafting blends tailored to your taste — combining beans from the world's leading growing regions to achieve balanced, flavorful cups. They offer a range of roast profiles alongside accessories and brewing equipment, and welcome visitors to their roastery by appointment.",
+    "website": "https://www.rooster-coffee.co.il",
+    "onlineOrdering": { "available": true, "url": "https://www.rooster-coffee.co.il" },
+    "retailLocations": [
+      "2 Knaim, Pardes Hanna (roastery, by appointment)"
+    ],
+    "roastStyles": ["light", "medium", "dark", "espresso"],
+    "image": "/images/rooster-coffee.png"
   }
 ]

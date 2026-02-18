@@ -350,5 +350,39 @@
     ],
     "roastStyles": ["light", "medium", "dark", "espresso"],
     "image": "/images/rooster-coffee.png"
+  },
+  {
+    "slug": "minuto",
+    "name": "Minuto",
+    "nameHe": "מינוטו קפה",
+    "city": "Rehovot",
+    "region": "Center",
+    "coordinates": { "lat": 31.8928, "lng": 34.8114 },
+    "description": "Founded by Erez Elbaz, a passionate coffee researcher and expert, Minuto is a specialty roastery in Rehovot that stocks beans from over 13 producers across more than 88 distinct blends — sourced from Asia, Central and South America, Mexico, India, Ethiopia, and Brazil. The shop doubles as a café where visitors can taste blends alongside pastries from small local producers, and the knowledgeable staff offer personalized guidance on selecting beans, grinders, and machines.",
+    "website": "https://www.minuto.co.il",
+    "onlineOrdering": { "available": true, "url": "https://www.minuto.co.il" },
+    "retailLocations": [
+      "22 Ahad Ha'am St, Rehovot (roastery & café)"
+    ],
+    "roastStyles": ["light", "medium", "dark", "single-origin", "espresso"],
+    "image": "/images/minuto.png"
+  },
+  {
+    "slug": "chicco-di-caffe",
+    "name": "Chicco Di Caffe",
+    "nameHe": "קיקו די קפה",
+    "city": "Kibbutz Magal",
+    "region": "North",
+    "coordinates": { "lat": 32.3961, "lng": 34.9278 },
+    "description": "Founded in 2015 by Amotz Sela out of a love for coffee and a desire to make quality accessible, Chicco Di Caffe (the name means 'coffee bean' in Italian) is a boutique roastery at Kibbutz Magal specializing in slow, small-batch roasting. Their range covers the full spectrum: moka, espresso, filter, cold brew, and Turkish — with expert guidance for newcomers and coffee veterans alike. They also have a retail branch in Raanana.",
+    "website": "https://chiccodicaffe.co.il",
+    "onlineOrdering": { "available": true, "url": "https://chiccodicaffe.co.il/shop" },
+    "retailLocations": [
+      "Kibbutz Magal (roastery & café)",
+      "Raanana Mall, Raanana"
+    ],
+    "roastStyles": ["light", "medium", "dark", "espresso"],
+    "foundedYear": 2015,
+    "image": "/images/chicco-di-caffe.jpg"
   }
 ]
